@@ -1,0 +1,13 @@
+# Adding these lines to your ~/.ssh/config will provide you with the ability to ssh in your server using a one line command
+# ssh aws-gpu-nb
+
+Host aws-gpu
+        HostName <GPU SERVER IP ADDRESS>
+        User ec2-user
+        IdentityFile <PATH TO AWS PEM FILE>
+
+Host aws-gpu-nb
+        HostName <GPU SERVER IP ADDRESS
+        User ec2-user
+        IdentityFile <PATH TO AWS PEM FILE>
+        LocalForward 8914 localhost:8888
