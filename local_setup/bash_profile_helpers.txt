@@ -1,0 +1,43 @@
+Author: Ryan Bales (ryan@balesofdata.com)
+Date: 12/31/2018
+
+In my environment, I manage a separate Python Virtual Environment named "notebook" where  I run Jupyter.  The helper functions below are from .bash_profile file.  I use them to provide one line function calls to terminal to run a local instance of Jupyter Notebook or Jupyter Lab. 
+
+# Virtual Environment Helpers
+export VED=~/.virtualenvs/
+
+ve() {
+    deactivate 2>/dev/null
+    if [[ $1 != "" && -d $VED/$1 ]] ; then
+        source $VED/$1/bin/activate
+    fi
+}
+
+lsve() {
+    ls $VED
+}
+
+mkve() {
+    python3 -m venv $VED/$1
+    source $VED/$1/bin/activate
+}
+
+rmve() {
+    deactivate 2>/dev/null
+    rm -rf $VED/$1/
+}
+
+sandbox() {
+    cd ~/WorkSpace/DTPlatform/sandbox/
+    ve sandbox
+}
+
+notebook() {
+    ve notebook
+    jupyter notebook
+}
+
+lab() {
+    ve notebook
+    jupyter lab
+}
