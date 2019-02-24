@@ -4,7 +4,7 @@
 
 The sample notebooks were built to use for demos and learning the Jupyter Lab system.  These notebooks will give you a good overview of Jupyter basics, loading data, plotting data, debugging, and Magic Commands.  Code is in Python and there is an example in R.
 
-These notebooks can be used locally or using an EC2 instance in Amazon Web Services (AWS).
+These notebooks can be used locally or on an EC2 instance in Amazon Web Services (AWS).
 
 The related presentation slide deck can be found [here](https://t.co/lEfMkm0UOz).
 
