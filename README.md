@@ -1,8 +1,8 @@
 # Jupyter Notebooks Overview
-> Example Jupyter Notebooks and Infrascture Code put together for learning and presentation.
+> Example Jupyter Notebooks and Infrastructure Code put together for learning and presentation.
 
 
-The sample notebooks were built to use for demos and learning the Jupyter Lab system.  These notebooks will give you a good overview of Jupyter basics, loading data, plotting data, debugging, and Magic Commands.  Code is in Python and there is an example in R.
+The sample notebooks were built to use for demos and learning the Jupyter Lab system.  These notebooks will give you a good overview of Jupyter basics, loading data, plotting data, debugging, and magic commands.  Code is in Python and there is an example in R.
 
 These notebooks can be used locally or on an EC2 instance in Amazon Web Services (AWS).
 
@@ -25,6 +25,8 @@ The related presentation slide deck can be found [here](https://t.co/lEfMkm0UOz)
 6. Install Jupyter Lab: ```pip install jupyterlab```
 
 7. Install Project Requirements: ```pip install -r requirements.txt```
+
+8. Start Jupyter Lab ```jupyter lab```
 
 
 ## Running in Amazon Web Services (AWS)
